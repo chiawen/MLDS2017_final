@@ -27,9 +27,11 @@ TensorFlow 1.0 <br />
 2. Start training !
 
 ## Train
-cd to the chosen experiment folder
+cd to the chosen experiment folder.
+Take IRNN exp1 for example
 ```
-$ python3 main.py 
+$ cd adding/ 
+$ python3 main.py --lstm_lr 0.01 --rnn_tanh_lr 0.01 --rnn_relu_lr 0.01 --irnn_lr 0.01
 ```
 
 ## Experiment Results
