@@ -1,4 +1,4 @@
-MLDS Final Experiment 
+MLDS Final Experiments
 ====
 Machine Learning and having it deep and structured final project experiments' source code.
 
@@ -7,9 +7,9 @@ Machine Learning and having it deep and structured final project experiments' so
 python3 <br />
 TensorFlow 1.0 <br />
 
-## Experiments
+## Experiments 
 
-- LSTM forget gate bias setting: 
+- LSTM forget gate bias: 
   - adding-lstm_bias/ 
 - Identity Recurrent Neural Network exp1 - adding problem: 
   - adding/ 
