@@ -33,7 +33,7 @@ $ python3 main.py
 
 ## Experiment Results
 - LSTM forget gate bias <br />
-  <img src="https://github.com/chiawen/MLDS2017_final/blob/master/asset/bias.png" width="250x">
+  <img src="https://github.com/chiawen/MLDS2017_final/blob/master/asset/bias.png" width="1024x">
 - Identity Recurrent Neural Network exp1 <br />
   ![image](https://github.com/chiawen/MLDS2017_final/blob/master/asset/adding-1.png =250x)
 
