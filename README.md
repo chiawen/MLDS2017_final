@@ -36,9 +36,11 @@ $ python3 main.py --epochs 300 --lstm_lr 0.01 --rnn_tanh_lr 0.01 --rnn_relu_lr 0
 
 ## Experiment Results
 - LSTM forget gate bias: <br />
-  <img src="https://github.com/chiawen/MLDS2017_final/blob/master/asset/bias.png" width="1024x">
-- Identity Recurrent Neural Network exp1: <br />
-  <img src="https://github.com/chiawen/MLDS2017_final/blob/master/asset/adding-1.png" width="1024x">
+  <img src="https://github.com/chiawen/MLDS2017_final/blob/master/asset/bias.png" width="512x">
+- Identity Recurrent Neural Network exp1 sequence length 50: <br />
+  <img src="https://github.com/chiawen/MLDS2017_final/blob/master/asset/adding-1.png" width="512x">
+- Identity Recurrent Neural Network exp1 sequence length 150: <br />
+  <img src="https://github.com/chiawen/MLDS2017_final/blob/master/asset/adding-2.png" width="512x">
 
 
 
