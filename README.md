@@ -31,15 +31,11 @@ cd to the experiment folder
 $ python3 main.py 
 ```
 
-## Model
-- dcgan structure
-- use one hot encoding for condition tags
-
 ## Experiment Results
 - LSTM forget gate bias <br />
-  ![image](https://github.com/chiawen/MLDS2017_final/blob/master/asset/bias.png)
+  ![image](https://github.com/chiawen/MLDS2017_final/blob/master/asset/bias.png =250x)
 - Identity Recurrent Neural Network exp1 <br />
-  ![image](https://github.com/chiawen/MLDS2017_final/blob/master/asset/adding-1.png)
+  ![image](https://github.com/chiawen/MLDS2017_final/blob/master/asset/adding-1.png =250x)
 
 
 
