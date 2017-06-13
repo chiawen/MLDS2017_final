@@ -33,9 +33,9 @@ $ python3 main.py
 ```
 
 ## Experiment Results
-- LSTM forget gate bias <br />
+- LSTM forget gate bias: <br />
   <img src="https://github.com/chiawen/MLDS2017_final/blob/master/asset/bias.png" width="1024x">
-- Identity Recurrent Neural Network exp1 <br />
+- Identity Recurrent Neural Network exp1: <br />
   <img src="https://github.com/chiawen/MLDS2017_final/blob/master/asset/adding-1.png" width="1024x">
 
 
