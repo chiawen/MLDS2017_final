@@ -9,8 +9,10 @@ TensorFlow 1.0 <br />
 
 ## Experiments
 
-- LSTM forget gate bias setting: adding-lstm_bias/ <br />
-- Identity Recurrent Neural Network exp1 - adding problem: adding/ <br />
+- LSTM forget gate bias setting: 
+  - adding-lstm_bias/ 
+- Identity Recurrent Neural Network exp1 - adding problem: 
+  - adding/ 
 
 ## Data
 
