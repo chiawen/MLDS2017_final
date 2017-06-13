@@ -11,39 +11,35 @@ scipy <br />
 ## Experiments
 
 - LSTM forget gate bias setting: adding-lstm_bias/ <br />
-- Identity Recurrent Neural Network exp 1 - adding problem: adding/ <br />
+- Identity Recurrent Neural Network exp1 - adding problem: adding/ <br />
 
 ## Data
 
-- LSTM forget gate bias: asdfasd 
+- LSTM forget gate bias: <br />
+  Source code will autogenerate a random training and testing data.
+- Identity Recurrent Neural Network exp1 - adding problem: <br />
+  Use TensorFlow package to import the MNIST dataset.
 
 
 ## Usage 
-1. Download hw3 data from data link, place the MLDS_HW3_dataset/ in the same directory and unzip the face.zip in MLDS_HW3_dataset/
-2. Replace the tags in MLDS_HW3_dataset/sample_testing_text.txt to the right format. 
-3. Start training !
+1. Go to the experiment folder that you want to test.
+2. Start training !
 
 ## Train
-First time use, you need to do the preprocessing
+cd to the experiment folder
 ```
-$ python3 main.py --prepro 1
+$ python3 main.py 
 ```
-If you already have done the preprocessing
-```
-$ python3 main.py --prepro 0
-```
+
 ## Model
 - dcgan structure
 - use one hot encoding for condition tags
 
-## Test 
-This code will automatically dump the results for the tags specified in MLDS_HW3_dataset/sample_testing_text.txt every <em>dump_every</em> batches to the test_img/ folder. <br />
-
 ## Experiment Results
-- blue hair blue eyes <br />
-  ![image](https://github.com/m516825/Conditional-GAN/blob/master/asset/0.jpg)
-- gray hair green eyes <br />
-  ![image](https://github.com/m516825/Conditional-GAN/blob/master/asset/1.jpg)
+- LSTM forget gate bias <br />
+  ![image](https://github.com/chiawen/MLDS2017_final/blob/master/asset/bias.png)
+- Identity Recurrent Neural Network exp1 <br />
+  ![image](https://github.com/chiawen/MLDS2017_final/blob/master/asset/adding-1.png)
 
 
 
