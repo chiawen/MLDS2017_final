@@ -5,8 +5,7 @@ Machine Learning and having it deep and structured final project experiments' so
 
 ## Environment
 python3 <br />
-tensorflow 1.0 <br />
-scipy <br />
+TensorFlow 1.0 <br />
 
 ## Experiments
 
@@ -26,7 +25,7 @@ scipy <br />
 2. Start training !
 
 ## Train
-cd to the experiment folder
+cd to the chosen experiment folder
 ```
 $ python3 main.py 
 ```
@@ -35,7 +34,7 @@ $ python3 main.py
 - LSTM forget gate bias <br />
   <img src="https://github.com/chiawen/MLDS2017_final/blob/master/asset/bias.png" width="1024x">
 - Identity Recurrent Neural Network exp1 <br />
-  ![image](https://github.com/chiawen/MLDS2017_final/blob/master/asset/adding-1.png =250x)
+  <img src="https://github.com/chiawen/MLDS2017_final/blob/master/asset/adding-1.png" width="1024x">
 
 
 
