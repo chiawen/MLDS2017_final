@@ -2,7 +2,7 @@ import tensorflow as tf
 import time 
 import numpy as np
 import os
-from model import LSTM, RNN, IRNN
+from model import LSTM, RNN, IRNN, ORNN
 import progressbar as pb
 import matplotlib
 matplotlib.use('Agg')
@@ -68,6 +68,11 @@ class Toy(object):
                                         lr=self.FLAGS.irnn_lr,
                                         activation=tf.nn.relu,
                                         name="relu")
+                self.ornn = ORNN(seq_length=784,
+                                        hidden_size=self.FLAGS.hidden_size,
+                                        lr=self.FLAGS.ornn_lr,
+                                        activation=tf.nn.tanh,
+                                        name="")
                 """
                 self.irnn_tanh = IRNN(seq_length=784,
                                         hidden_size=self.FLAGS.hidden_size,
@@ -80,6 +85,7 @@ class Toy(object):
                 self.models[self.rnn_tanh.name] = self.rnn_tanh
                 self.models[self.rnn_relu.name] = self.rnn_relu
                 self.models[self.irnn_relu.name] = self.irnn_relu
+                self.models[self.ornn.name] = self.ornn
                 #self.models[self.irnn_tanh.name] = self.irnn_tanh
 
                 self.sess.run(tf.global_variables_initializer())
@@ -127,7 +133,7 @@ class Toy(object):
 
         def dump_curve(self):
                 handles = []
-                colors = ['r', 'b', 'g', 'm', 'k']
+                colors = ['r', 'b', 'g', 'm', 'k', 'c']
                 for idx, (name, scores) in enumerate(sorted(self.scores.items(), key=lambda x:x[0])):
                         handles.append(plt.plot(scores, colors[idx], label=name)[0])
                 plt.legend(handles=handles, bbox_to_anchor=(1, 0.5), loc='center left', borderaxespad=0.)

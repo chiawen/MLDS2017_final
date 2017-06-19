@@ -133,7 +133,7 @@ class Toy(object):
 
     def dump_curve(self):
         handles = []
-        colors = ['r', 'b', 'g', 'm', 'k']
+        colors = ['r', 'b', 'g', 'm', 'k', 'c']
         for idx, (name, scores) in enumerate(sorted(self.scores.items(), key=lambda x:x[0])):
             handles.append(plt.plot(scores, colors[idx], label=name)[0])
         plt.legend(handles=handles)
