@@ -2,7 +2,7 @@ import tensorflow as tf
 import time 
 import numpy as np
 import os
-from model import LSTM, RNN, IRNN
+from model import LSTM, RNN, IRNN, ORNN
 import progressbar as pb
 import matplotlib
 matplotlib.use('Agg')
@@ -65,6 +65,11 @@ class Toy(object):
                     lr=self.FLAGS.irnn_lr,
                     activation=tf.nn.relu,
                     name="")
+        self.ornn = ORNN(seq_length=self.FLAGS.seq_length, 
+                    hidden_size=self.FLAGS.hidden_size,
+                    lr=self.FLAGS.ornn_lr,
+                    activation=tf.nn.tanh,
+                    name="")
         """
         self.irnn_tanh = IRNN(seq_length=self.FLAGS.seq_length, 
                     hidden_size=self.FLAGS.hidden_size,
@@ -78,6 +83,7 @@ class Toy(object):
         self.models[self.rnn_tanh.name] = self.rnn_tanh
         self.models[self.rnn_relu.name] = self.rnn_relu
         self.models[self.irnn_relu.name] = self.irnn_relu
+        self.models[self.ornn.name] = self.ornn
         #self.models[self.irnn_tanh.name] = self.irnn_tanh
 
         self.sess.run(tf.global_variables_initializer())

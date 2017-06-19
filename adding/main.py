@@ -14,6 +14,7 @@ tf.flags.DEFINE_float("lstm_lr", 1e-4, "training learning rate")
 tf.flags.DEFINE_float("rnn_tanh_lr", 1e-4, "training learning rate")
 tf.flags.DEFINE_float("rnn_relu_lr", 1e-4, "training learning rate")
 tf.flags.DEFINE_float("irnn_lr", 1e-4, "training learning rate")
+tf.flags.DEFINE_float("ornn_lr", 1e-4, "training learning rate")
 tf.flags.DEFINE_integer("seq_length", 150, "validation size")
 
 tf.flags.DEFINE_boolean("prepro", True, "preprocess word to vector matrix")
