@@ -29,12 +29,12 @@ TensorFlow 1.0 <br />
 IRNN exp1 - adding problem sequence length 50
 ```
 $ cd adding/ 
-$ python3 main.py --epochs 300 --seq_length 50 --lstm_lr 0.01 --rnn_tanh_lr 0.01 --rnn_relu_lr 0.01 --irnn_lr 0.01
+$ python3 main.py --epochs 300 --seq_length 50 --lstm_lr 0.01 --rnn_tanh_lr 0.01 --rnn_relu_lr 0.01 --irnn_lr 0.01 --ornn_lr 0.01
 ```
 IRNN exp1 - adding problem with sequence length 150
 ```
 $ cd adding/ 
-$ python3 main.py --epochs 300 --seq_length 150 --lstm_lr 1e-4 --rnn_tanh_lr 1e-4 --rnn_relu_lr 1e-4 --irnn_lr 1e-4
+$ python3 main.py --epochs 300 --seq_length 150 --lstm_lr 1e-4 --rnn_tanh_lr 1e-4 --rnn_relu_lr 1e-4 --irnn_lr 1e-4 --ornn_lr 0.01
 ```
 LSTM forget bais 
 ```
